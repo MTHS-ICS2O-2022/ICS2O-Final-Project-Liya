@@ -1,9 +1,14 @@
 /* Created by: liya getachew
-* Created on: Nov 2022
+* Created on: Jan 2023
 * This file contains the CSS for index.html
 */
 
 body {
-  background-image: url("../images/math4.jpg");
-  background-color: #cccccc;
+  background-image: url("../images/mathbg5.jpg");
+  background-color: #fedbff;
+}
+
+.mdl-layout__header-row {
+  align-items: center;
+  justify-content: center;
 }

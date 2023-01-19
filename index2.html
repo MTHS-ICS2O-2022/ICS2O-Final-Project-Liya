@@ -53,12 +53,13 @@
 <div class="mdl-layout mdl-js-layout">
   <header class="mdl-layout__header mdl-layout__header--scroll">
     <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">Can You Math?</span>
+      <span class="mdl-layout-title">Can You Do Math?</span>
+    </div>
   </header>
   <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Empty</span>
+    <span class="mdl-layout-title">Hints box!</span>
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">1</a>
+      <a class="mdl-navigation__link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">hint</a>
     </nav>
    </div>
       <main class="mdl-layout__content">
@@ -66,31 +67,71 @@
         <br>
         <br>
         <br>
+        <br>
+        <!-- quiz container -->
         <div id="box">
-          <div id="welcome-screen">
-            <h3 class="welcome-text">Welcome to the "Can You Math" Quiz!<br> This quiz tests your mathematical knowledge.</h3>
+          <form class="quiz">
+            <div id="radio-buttons">
+             <!-- question 1 -->
+              <p id=question1>2 + 2 = </p>
+              <!-- choices for question 1 -->
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="choice1">
+              <input class="mdl-radio__button" id="choice1" name="choice" type="radio" value="1"/>
+              <span class="mdl-radio__label" id="choice1">2</span>
+            </label>
             <br>
-            <img src="./images/math-time.svg" alt="math time" height="200" width="200">
-            <br>
-           <!-- Textfield with Floating Label -->
-            <form action="#">
-              <i class="material-icons">person</i> Name:
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"> 
-                <input class="mdl-textfield__input" type="text" id="sample3"> 
-                <label class="mdl-textfield__label" for="sample3">Text... 
-                </label>
-              </div>
-            </form>
-            <h4 class="welcome-text">ready to start? click the button!</h4>
-            <br>
-            <br>
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="choice2">
+            <input  class="mdl-radio__button" id="choice2" name="choice"type="radio"
+              value="2"
+              onclick="score()"
+            />
+            <span class="mdl-radio__label" id="choice2">m a t h</span>
+          </label>
+          <br>
+            <label
+            class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+            for="choice3"
+          >
+            <input
+              class="mdl-radio__button"
+              id="choice3"
+              name="choice"
+              type="radio"
+              value="3"
+            />
+            <span class="mdl-radio__label" id="choice3">1</span>
+          </label>
+          <br>
+            <label
+            class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+            for="choice4"
+          >
+            <input
+              class="mdl-radio__button"
+              id="choice4"
+              name="choice"
+              type="radio"
+              value="4"
+            />
+              <span class="mdl-radio__label" id="choice4">for</span>
+            </label>
           </div>
+          </form>
+          <br>
           <!-- Flat button -->
-          <a href="./index2.html">
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" onclick="startButton()">
-            commence!
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" id="submit" onclick="submitQuiz()">
+            submit
           </button>
-          </a>
+        </div>
+          <br>
+          <div id="results">
+            <p id="score"></p>
+            <a href="./index.html">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" id="home">
+            return to home
+          </button>
+            </a>
+          </div>
         </div>
       </div>
       </main>

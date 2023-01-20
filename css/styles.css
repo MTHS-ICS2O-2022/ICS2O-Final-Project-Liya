@@ -1,0 +1,42 @@
+/* Created by: liya getachew
+* Created on: Jan 2023
+* This file contains the CSS for index.html
+*/
+
+body {
+  background-image: url("../images/mathbg5.jpg");
+  background-color: #fedbff;
+}
+
+.mdl-layout__header-row {
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  width: 800px;
+  max-width: 80%;
+  background-color: #af7355;
+  border-radius: 5px;
+  border-color: black;
+  border-style: double;
+  padding: 15px;
+  box-shadow: 0px 0px 10px 2px #000000;
+}
+
+.welcome-text {
+  color: #ffffff;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#results {
+  display: none;
+  width: 800px;
+  max-width: 80%;
+  background-color: #af7355;
+  border-radius: 5px;
+  border-color: black;
+  border-style: double;
+  padding: 15px;
+  box-shadow: 0px 0px 10px 2px #000000;
+}

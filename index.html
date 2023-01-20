@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- ICS2O-Final-Project-Liya -->
+<html lang="en-ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This quiz tests if you can really math or not." />
+    <meta name="keywords" content="mths, ics2o" />
+    <meta name="author" content="liya getachew" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <title>Can You Math?</title>
+    <link
+      rel="canonical"
+      href="https://liya-getachew.github.io/ICS2O-Final-Project-Liya/"
+    />
+    <link rel="manifest" href="/ICS2O-Final-Project-Liya/manifest.webmanifest" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!--- None blocking for Lighthouse report --->
+    <!--- https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously --->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      media="none"
+      onload="if(media!='all')media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      />
+    </noscript>
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.brown-orange.min.css"
+      media="none"
+      onload="if(media!='all')media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://code.getmdl.io/1.3.0/material.brown-orange.min.css"
+      />
+    </noscript>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  </head>
+  <title>Can You Math?</title>
+  <body>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+    <div class="mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header mdl-layout__header--scroll">
+        <div class="mdl-layout__header-row"></div>
+        <span class="mdl-layout-title">Can You Math?</span>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Empty</span>
+        <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">1</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content" align="center">
+          <br><br><br>
+          <div id="container">
+            <div id="welcome-screen">
+              <h3 class="welcome-text">Welcome to the "Can You Math" Quiz,<br> An easy math quiz anyone can do!</h3>
+              <br>
+              <img src="./images/math-time.svg" alt="math time" height="200" width="200">
+              <br>
+              <!-- Textfield with Floating Label -->
+              <form action="#">
+                <i class="material-icons">person</i> Name:
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"> 
+                  <input class="mdl-textfield__input" type="text" id="sample3"> 
+                  <label class="mdl-textfield__label" for="sample3">Text... </label>
+                </div>
+              </form>
+              <h4 class="welcome-text">ready to start? click the button!</h4>
+              <br><br>
+            </div>
+            <!-- Flat button -->
+            <a href="./index2.html">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" onclick="startButton()">
+              let's go!
+            </button>
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

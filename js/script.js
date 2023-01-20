@@ -25,12 +25,17 @@ function submitQuiz() {
   let score = 0
   const userAnswer2 = parseInt(document.getElementById("sample2").value)
   const userAnswer3 = parseInt(document.getElementById("question3").value)
+  const userAnswer4 = parseInt(document.getElementById("question4").value)
 
   if (userAnswer2 == -4) {
     score++
   }
 
   if (userAnswer3 == 4) {
+    score++
+  }
+
+  if (userAnswer4 == 1) {
     score++
   }
     

@@ -4,7 +4,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This quiz tests if you can really math or not." />
+    <meta
+      name="description"
+      content="This quiz tests if you can really math or not."
+    />
     <meta name="keywords" content="mths, ics2o" />
     <meta name="author" content="liya getachew" />
     <meta name="theme-color" content="#FFFFFF" />
@@ -13,7 +16,10 @@
       rel="canonical"
       href="https://liya-getachew.github.io/ICS2O-Final-Project-Liya/"
     />
-    <link rel="manifest" href="/ICS2O-Final-Project-Liya/manifest.webmanifest" />
+    <link
+      rel="manifest"
+      href="/ICS2O-Final-Project-Liya/manifest.webmanifest"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <!--- None blocking for Lighthouse report --->
     <!--- https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously --->
@@ -59,57 +65,104 @@
       <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">Hints box!</span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">hint</a>
+          <a
+            class="mdl-navigation__link"
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            >hint</a
+          >
         </nav>
       </div>
       <main class="mdl-layout__content">
         <div class="page-content" align="center">
-          <br>
-          <br>
-          <br>
-          <br>
+          <br />
+          <br />
+          <br />
+          <br />
           <!-- quiz container -->
           <div id="container">
-              <br><hr><br>
-              <p><strong>Q2: </strong>2/3 (9x - 6) - 4 = 9x - 6. Based off of this equation, what is the value of 3x - 2?</p>
-              <!-- Numeric Textfield -->
-                <form action="#">
-                  <div class="mdl-textfield mdl-js-textfield">
-                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
-                    <label class="mdl-textfield__label" for="sample2">Number...</label>
-                    <span class="mdl-textfield__error">Input is not a number!</span>
-                  </div>
-                </form>
-            <br><hr><br>
-            <p><strong>Q3: </strong>In a mythical land 1/2 of 5 = 3. If the same proportion holds true, what is the value of 1/3 of 10?</p>
-                <!-- Numeric Textfield -->
-                <form action="#">
-                  <div class="mdl-textfield mdl-js-textfield">
-                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="question3">
-                    <label class="mdl-textfield__label" for="question3">Number...</label>
-                    <span class="mdl-textfield__error">Input is not a number!</span>
-                  </div>
-                </form>
-              <br><hr><br>
-            <p><strong>Q4: </strong>You have 50 biscuits. How many times can you take away 5 from the 50 biscuits?</p>
-                <!-- Numeric Textfield -->
-                <form action="#">
-                  <div class="mdl-textfield mdl-js-textfield">
-                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="question4">
-                    <label class="mdl-textfield__label" for="question4">Number...</label>
-                    <span class="mdl-textfield__error">Input is not a number!</span>
-                  </div>
-                </form>
-            <br>
+            <br />
+            <hr />
+            <br />
+            <p>
+              <strong>Q2: </strong>2/3 (9x - 6) - 4 = 9x - 6. Based off of this
+              equation, what is the value of 3x - 2?
+            </p>
+            <!-- Numeric Textfield -->
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield">
+                <input
+                  class="mdl-textfield__input"
+                  type="text"
+                  pattern="-?[0-9]*(\.[0-9]+)?"
+                  id="sample2"
+                />
+                <label class="mdl-textfield__label" for="sample2"
+                  >Number...</label
+                >
+                <span class="mdl-textfield__error">Input is not a number!</span>
+              </div>
+            </form>
+            <br />
+            <hr />
+            <br />
+            <p>
+              <strong>Q3: </strong>In a mythical land 1/2 of 5 = 3. If the same
+              proportion holds true, what is the value of 1/3 of 10?
+            </p>
+            <!-- Numeric Textfield -->
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield">
+                <input
+                  class="mdl-textfield__input"
+                  type="text"
+                  pattern="-?[0-9]*(\.[0-9]+)?"
+                  id="question3"
+                />
+                <label class="mdl-textfield__label" for="question3"
+                  >Number...</label
+                >
+                <span class="mdl-textfield__error">Input is not a number!</span>
+              </div>
+            </form>
+            <br />
+            <hr />
+            <br />
+            <p>
+              <strong>Q4: </strong>You have 50 biscuits. How many times can you
+              take away 5 from the 50 biscuits?
+            </p>
+            <!-- Numeric Textfield -->
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield">
+                <input
+                  class="mdl-textfield__input"
+                  type="text"
+                  pattern="-?[0-9]*(\.[0-9]+)?"
+                  id="question4"
+                />
+                <label class="mdl-textfield__label" for="question4"
+                  >Number...</label
+                >
+                <span class="mdl-textfield__error">Input is not a number!</span>
+              </div>
+            </form>
+            <br />
             <!-- Flat button -->
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" id="submit" onclick="submitQuiz()">
-                submit
-              </button>
+            <button
+              class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent"
+              id="submit"
+              onclick="submitQuiz()"
+            >
+              submit
+            </button>
           </div>
           <div id="results">
             <p id="score"></p>
             <a href="./index.html">
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" id="home">
+              <button
+                class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent"
+                id="home"
+              >
                 return to home
               </button>
             </a>

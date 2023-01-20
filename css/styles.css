@@ -13,7 +13,7 @@ body {
   justify-content: center;
 }
 
-#box {
+#container {
   width: 800px;
   max-width: 80%;
   background-color: #af7355;

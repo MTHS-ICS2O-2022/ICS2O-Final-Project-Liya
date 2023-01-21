@@ -26,7 +26,7 @@ body {
 
 .welcome-text {
   color: #fff;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: Monaco, "Courier New", monospace;
 }
 
 #results {
@@ -38,4 +38,21 @@ body {
   border-color: black;
   border-style: double;
   padding: 15px;
+}
+
+#score {
+  color: #5b0606;
+  font-family: Monaco, "Courier New", monospace;
+}
+
+.text {
+  font-size: 150%;
+  font-family: "Segoe UI", "Courier New", "sans serif";
+  background-color: #eab890;
+  width: 500px;
+  border-radius: 5px;
+}
+
+#messages {
+  font-size: 150%;
 }

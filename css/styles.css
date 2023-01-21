@@ -16,14 +16,13 @@
 }
 
 body {
-  background-image: url("../images/mathbg5.jpg");
-  background-color: #fedbff;
+  background-color: #ffc09e;
 }
 
 #container {
   width: 800px;
   max-width: 80%;
-  background-color: #af7355;
+  background-color: #a66f54;
   border-radius: 5px;
   border-color: black;
   border-style: double;
@@ -55,7 +54,7 @@ body {
 .text {
   font-size: 150%;
   font-family: "Segoe UI", "Courier New", sans-serif;
-  background-color: #eab890;
+  background-color: #fff;
   width: 500px;
   border-radius: 5px;
 }

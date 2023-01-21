@@ -3,14 +3,21 @@
 * This file contains the CSS for index.html
 */
 
-body {
-  background-image: url("../images/mathbg5.jpg");
-  background-color: #fedbff;
-}
-
 .mdl-layout__header-row {
   align-items: center;
   justify-content: center;
+}
+
+/* Due to error in MDL : https://github.com/google/material-design-lite/issues/5281
+*/
+.mdl-ripple {
+  background: #000;
+  opacity: 0.001;
+}
+
+body {
+  background-image: url("../images/mathbg5.jpg");
+  background-color: #fedbff;
 }
 
 #container {
@@ -47,7 +54,7 @@ body {
 
 .text {
   font-size: 150%;
-  font-family: "Segoe UI", "Courier New", "sans serif";
+  font-family: "Segoe UI", "Courier New", sans-serif;
   background-color: #eab890;
   width: 500px;
   border-radius: 5px;

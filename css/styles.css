@@ -21,12 +21,12 @@ body {
   border-color: black;
   border-style: double;
   padding: 15px;
-  box-shadow: 0px 0px 10px 2px #000000;
+  box-shadow: 0 0 10px 2px #000;
 }
 
 .welcome-text {
-  color: #ffffff;
-  font-family: "Lucida Console", "Courier New", monospace;
+  color: #fff;
+  font-family: Monaco, "Courier New", monospace;
 }
 
 #results {
@@ -38,5 +38,21 @@ body {
   border-color: black;
   border-style: double;
   padding: 15px;
-  box-shadow: 0px 0px 10px 2px #000000;
+}
+
+#score {
+  color: #5b0606;
+  font-family: Monaco, "Courier New", monospace;
+}
+
+.text {
+  font-size: 150%;
+  font-family: "Segoe UI", "Courier New", "sans serif";
+  background-color: #eab890;
+  width: 500px;
+  border-radius: 5px;
+}
+
+#messages {
+  font-size: 150%;
 }

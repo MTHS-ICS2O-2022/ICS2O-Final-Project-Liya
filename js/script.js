@@ -33,7 +33,7 @@ function submitQuiz() {
   if (userAnswer1 == 4) {
     score++;
   }
-  
+
   if (userAnswer2 == -4) {
     score++;
   }
@@ -54,25 +54,41 @@ function submitQuiz() {
     score++;
   }
 
-  let grade = ["./images/a+.svg", "./images/b+.svg", "./images/c+.svg", "./images/d+.svg", "./images/disappointed.svg"]
+  let grade = [
+    "./images/a+.svg",
+    "./images/b+.svg",
+    "./images/c+.svg",
+    "./images/d+.svg",
+    "./images/disappointed.svg",
+  ];
 
-let message = ["Congrats! You did it! You beat the quiz and proved that you <strong>can</strong> do math.", "You did pretty well!", "It's ok, you can do better next time.", "One day.", "...sorry but...did you even try?"]
+  let message = [
+    "Congrats! You did it! You beat the quiz and proved that you <strong>can</strong> do math.",
+    "You did pretty well!",
+    "It's ok, you can do better next time.",
+    "One day.",
+    "...sorry but...did you even try?",
+  ];
 
-  let objNumber = 0
+  let objNumber = 0;
 
   if (score == 6) {
-    objNumber = 0
+    objNumber = 0;
   } else if (score == 5) {
-    objNumber = 1
+    objNumber = 1;
   } else if (score == 4) {
-    objNumber = 2
+    objNumber = 2;
   } else if (score == 3 || score == 2 || score == 1) {
-    objNumber = 3
+    objNumber = 3;
   } else {
-    objNumber = 4
+    objNumber = 4;
   }
 
-  document.getElementById("score").innerHTML = "Your Final Mark is: " + score + "/6"
-  document.getElementById("final-mark").innerHTML = "<img src='" + grade[objNumber] + "' alt='final-mark' height='200' width='300'>"
-  document.getElementById("messages").innerHTML = "<br>" + message[objNumber]
+  document.getElementById("score").innerHTML =
+    "Your Final Mark is: " + score + "/6";
+  document.getElementById("final-mark").innerHTML =
+    "<img src='" +
+    grade[objNumber] +
+    "' alt='final-mark' height='200' width='300'>";
+  document.getElementById("messages").innerHTML = "<br>" + message[objNumber];
 }

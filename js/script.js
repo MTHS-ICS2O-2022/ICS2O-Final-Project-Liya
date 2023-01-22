@@ -18,11 +18,12 @@ if (navigator.serviceWorker) {
 // functions for the quiz.
 
 function submitQuiz() {
+  // makes the question container disappear to show the result container
   document.getElementById("container").style.display = "none"
   document.getElementById("results").style.display = "block"
   console.log("end screen")
 
-  let score = 0
+  // user input for answers
   const userAnswer1 = parseInt(document.getElementById("question-one").value)
   const userAnswer2 = parseInt(document.getElementById("question-two").value)
   const userAnswer3 = parseInt(document.getElementById("question-three").value)
@@ -30,6 +31,9 @@ function submitQuiz() {
   const userAnswer5 = parseInt(document.getElementById("question-five").value)
   const userAnswer6 = parseInt(document.getElementById("question-six").value)
 
+  let score = 0
+
+  // checks if user input is correct
   if (userAnswer1 == 4) {
     score++
   }
@@ -54,6 +58,7 @@ function submitQuiz() {
     score++
   }
 
+  // array holding images for each grade
   let grade = [
     "./images/a+.svg",
     "./images/b+.svg",
@@ -62,6 +67,7 @@ function submitQuiz() {
     "./images/disappointed.svg",
   ]
 
+  // array holding different messages depending on grade
   let message = [
     "Congrats! You did it! You beat the quiz and proved that you <strong>can</strong> do math.",
     "You did pretty well!",

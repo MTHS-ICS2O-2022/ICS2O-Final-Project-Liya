@@ -10,53 +10,36 @@
 
 /* Due to error in MDL : https://github.com/google/material-design-lite/issues/5281
 */
-.mdl-ripple {
-  background: #000;
-  opacity: 0.001;
-}
 
 body {
-  background-color: #ffc09e;
+  background-image: url(../images/bg-option4.jpg);
 }
 
 #container {
   width: 800px;
   max-width: 80%;
-  background-color: #a66f54;
-  border-radius: 5px;
-  border-color: black;
+  background-color: #fff;
   border-style: double;
   padding: 15px;
-  box-shadow: 0 0 10px 2px #000;
-}
-
-.welcome-text {
-  color: #fff;
-  font-family: Monaco, "Courier New", monospace;
 }
 
 #results {
   display: none;
   width: 800px;
   max-width: 80%;
-  background-color: #af7355;
-  border-radius: 5px;
-  border-color: black;
+  background-color: #fff;
   border-style: double;
   padding: 15px;
 }
 
 #score {
-  color: #5b0606;
-  font-family: Monaco, "Courier New", monospace;
+  color: #b8530f;
+  font-family: "Segoe UI", "Courier New", sans-serif;
 }
 
 .text {
   font-size: 150%;
   font-family: "Segoe UI", "Courier New", sans-serif;
-  background-color: #fff;
-  width: 500px;
-  border-radius: 5px;
 }
 
 #messages {

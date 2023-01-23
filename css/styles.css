@@ -3,54 +3,43 @@
 * This file contains the CSS for index.html
 */
 
-body {
-  background-image: url("../images/mathbg5.jpg");
-  background-color: #fedbff;
-}
-
 .mdl-layout__header-row {
   align-items: center;
   justify-content: center;
 }
 
+/* Due to error in MDL : https://github.com/google/material-design-lite/issues/5281
+*/
+
+body {
+  background-image: url("../images/bg-option4.jpg");
+}
+
 #container {
   width: 800px;
   max-width: 80%;
-  background-color: #af7355;
-  border-radius: 5px;
-  border-color: black;
+  background-color: #fff;
   border-style: double;
   padding: 15px;
-  box-shadow: 0 0 10px 2px #000;
-}
-
-.welcome-text {
-  color: #fff;
-  font-family: Monaco, "Courier New", monospace;
 }
 
 #results {
   display: none;
   width: 800px;
   max-width: 80%;
-  background-color: #af7355;
-  border-radius: 5px;
-  border-color: black;
+  background-color: #fff;
   border-style: double;
   padding: 15px;
 }
 
 #score {
-  color: #5b0606;
-  font-family: Monaco, "Courier New", monospace;
+  color: #b8530f;
+  font-family: "Segoe UI", "Courier New", sans-serif;
 }
 
 .text {
   font-size: 150%;
-  font-family: "Segoe UI", "Courier New", "sans serif";
-  background-color: #eab890;
-  width: 500px;
-  border-radius: 5px;
+  font-family: "Segoe UI", "Courier New", sans-serif;
 }
 
 #messages {

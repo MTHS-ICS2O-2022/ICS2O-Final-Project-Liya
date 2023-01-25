@@ -78,6 +78,7 @@ function submitQuiz() {
 
   let objNumber = 0
 
+  // Sets the value of the object number depending on the score the user gets. This is so the grade and message arrays can display a specific object for each possible mark.
   if (score == 6) {
     objNumber = 0
   } else if (score == 5) {
@@ -90,6 +91,7 @@ function submitQuiz() {
     objNumber = 4
   }
 
+  // displays the user's final mark alongside a matching image and message
   document.getElementById("score").innerHTML =
     "Your Final Mark is: " + score + "/6"
   document.getElementById("final-mark").innerHTML =
